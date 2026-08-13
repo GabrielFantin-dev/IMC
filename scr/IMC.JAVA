@@ -1,8 +1,9 @@
-package IMC;
+package Imc;
 
 import java.util.Scanner;
 
 public class Imc {
+	
 	
 	public static void main(String[] args) {
 		
@@ -16,7 +17,13 @@ public class Imc {
 		
 		double IMC = peso / (altura * altura);
 		
-		System.out.println("O seu peso é " + IMC);
+		if (IMC >= 18) {
+			System.out.println("Você esta com a massa correta.");
+		}else {
+			System.out.println("Voce esta com a massa muito baix, va comer!");
+		}
+		
+		System.out.println("O seu IMC é " + IMC);
 	}
 		
 }
