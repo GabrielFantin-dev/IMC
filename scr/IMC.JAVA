@@ -1,4 +1,4 @@
-package IMC;
+package Imc;
 
 import java.util.Scanner;
 
@@ -17,12 +17,18 @@ public class Imc {
 		
 		double IMC = peso / (altura * altura);
 		
-		if (IMC >= 18) {
-			System.out.println("Você esta com a massa correta.");
+		if (IMC < 18.5) {
+			System.out.println("Você está com magreza ou abaixo do peso.");
+		}else if(IMC <= 24.9) {
+			System.out.println("Você está com peso normal ou adequado!");
+		}else if(IMC >= 25.0 && IMC <= 29.9) {
+			System.out.println("Você está com sobrepeso.");
+		}else if(IMC >= 30.0 && IMC <= 39.9) {
+			System.out.println("Você está com obesidade.");
 		}else {
-			System.out.println("Voce esta com a massa muito baix, va comer!");
+			System.out.println("Você está com obesidade grave.");
 		}
-		
+
 		System.out.println("O seu IMC é " + IMC);
 	}
 		
