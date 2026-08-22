@@ -32,4 +32,4 @@ public class Imc {
 		System.out.println("O seu IMC é " + IMC);
 	}
 		
-}
+} //Fim.
