@@ -28,7 +28,6 @@ public class Imc {
 		}else {
 			System.out.println("Você está com obesidade grave.");
 		}
-
 		System.out.println("O seu IMC é " + IMC);
 	}
 		
