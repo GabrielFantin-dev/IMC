@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Imc {
 	
-	
 	public static void main(String[] args) {
 		
 		Scanner entrada = new Scanner(System.in);
@@ -19,7 +18,7 @@ public class Imc {
 		
 		if (IMC < 18.5) {
 			System.out.println("Você está com magreza ou abaixo do peso.");
-		}else if(IMC <= 24.9) {
+		}else if(IMC >= 24.9) {
 			System.out.println("Você está com peso normal ou adequado!");
 		}else if(IMC >= 25.0 && IMC <= 29.9) {
 			System.out.println("Você está com sobrepeso.");
